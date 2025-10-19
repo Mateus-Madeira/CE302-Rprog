@@ -1,0 +1,44 @@
+---
+title: "Análise de Conjuntos de Dados do Pacote vcdExtra"
+author: "Mateus Fernando Chella Madeira"
+date: "`r format(Sys.Date(), '%d/%m/%Y')`"
+output:
+  pdf_document:
+    toc: false
+  html_document:
+    toc: true
+    toc_float: true
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+# Carregando os pacotes necessários
+library(vcdExtra)
+library(dplyr)
+```
+
+# Questão 1
+
+### Conjunto `Abortation`:
+
+-   Variável Resposta: `Support_abortation` , ela é uma variável categórica dicotômica que indica se o participante é favorável ou contra o aborto que é o objetivo do estudo.
+
+-   Variáveis Explicativas: `sex``:` indica o sexo do participante e é uma variável categórica dicotômica e `Status``:` Indica se a pessoa possui um status alto ou baixo e é uma variável categórica dicotômica.
+
+### Conjunto `Caesar`:
+
+-   Variável Resposta: `Infection`. Ela é uma variável categórica politômica e indica se, após o parto por cesariana, houve uma infecção `Type 1` ou `Type 2` ou se não houve infecção `None`.
+
+-Variáveis Explicativas: `Risk`: É uma variável categórica dicotômica e indica se a paciente tem presença de fatores de risco. `Antibiotics`: é uma variável categórica dicotômica Indica se foram ministrados antibióticos. `Planned`: é uma variável categórica dicotômica e indica se o parto por cesariana foi planejado ou se foi emergencial.
+
+### Conjunto `DaytonSurvey`:
+
+-   Variável Resposta: `freq`, variável quantitativa que indica a frequência de alunos que possuem certo conjunto de características e comportamentos.
+
+-   Variáveis Explicativas:`cigarette` é uma variável categórica dicotômica indica se o aluno fuma ou não cigarros,`alcohol``:` é uma variável categórica dicotômica e indica se o aluno consome bebidas alcoólicas, `marijuana:` é uma variável categórica dicotômica e indica se o aluno faz uso ou não de maconha, `sex:` é uma variável categórica dicotômica e indica o sexo do aluno, `race:` é uma variável categórica dicotômica e indica se o aluno é branco ou não.
+
+### Conjunto `Hoyt`:
+
+-   Variável Resposta: `Satus`, variável categórica politômica que indica o que o estudante formado no Minnesota em 1930 estava fazendo em 1939.
+-   Variáveis Explicativas: `Occupation` é uma variável categórica politômica e indica o status da ocupação dos pais do aluno de 1 a 7 com 1 sendo o maior nível e o 7 o menor nível, `Rank` é uma variável categórica politômica indica a posição do aluno por suas notas separadas em 3 grupos, `Sex` é uma variável categórica dicotômica e indica o sexo do estudante.
